@@ -137,6 +137,8 @@
 extern "C" {
 #endif
 
+#define SIXTY_FOUR_BIT
+
 /*
  * These preprocessor symbols control various aspects of the bignum headers
  * and library code. They're not defined by any "normal" configuration, as

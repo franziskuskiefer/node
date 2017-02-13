@@ -207,16 +207,16 @@
 # endif
 #endif
 
-#if defined(HEADER_NEW_DES_H) || defined(HEADER_DES_H)
+//#if defined(HEADER_NEW_DES_H) || defined(HEADER_DES_H)
  /* If this is set to 'unsigned int' on a DEC Alpha, this gives about a
   * %20 speed up (longs are 8 bytes, int's are 4). */
 # undef DES_LONG
-# if defined(_M_X64) || defined(__x86_64__) || defined(__arm__) || defined(__mips__)
+//# if defined(_M_X64) || defined(__x86_64__) || defined(__arm__) || defined(__mips__)
 #  define DES_LONG unsigned int
-# elif defined(_M_IX86) || defined(__i386__)
-#  define DES_LONG unsigned long
-# endif
-#endif
+//# elif defined(_M_IX86) || defined(__i386__)
+//#  define DES_LONG unsigned long
+//# endif
+//#endif
 
 #if defined(HEADER_BN_H) && !defined(CONFIG_HEADER_BN_H)
 # define CONFIG_HEADER_BN_H
